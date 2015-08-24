@@ -1,0 +1,23 @@
+INFO:root:Getting 1150 tweets for JLin7. (Or ~3200, whichever is lower.)
+INFO:root:Getting 1150 tweets for JLin7. (Or ~3200, whichever is lower.)
+INFO:root:Getting 1150 tweets for JLin7. (Or ~3200, whichever is lower.)
+WARNING:root:<type 'exceptions.TypeError'>
+WARNING:root:must be unicode, not str
+WARNING:root:<traceback object at 0x1102d9998>
+INFO:root:Getting 1150 tweets for JLin7. (Or ~3200, whichever is lower.)
+INFO:root:Getting 998 tweets for kobebryant. (Or ~3200, whichever is lower.)
+INFO:root:Getting 4787 tweets for KingJames. (Or ~3200, whichever is lower.)
+WARNING:root:<type 'exceptions.KeyboardInterrupt'>
+WARNING:root:
+WARNING:root:<traceback object at 0x1026ee560>
+INFO:root:Getting 1150 tweets for JLin7. (Or ~3200, whichever is lower.)
+INFO:root:Getting 998 tweets for kobebryant. (Or ~3200, whichever is lower.)
+INFO:root:Getting 4787 tweets for KingJames. (Or ~3200, whichever is lower.)
+INFO:root:Getting 1150 tweets for JLin7. (Or ~3200, whichever is lower.)
+INFO:root:Getting 8042 tweets for MileyCyrus. (Or ~3200, whichever is lower.)
+INFO:root:Kyrielrving has no tweets to get. Moving on.
+INFO:root:Getting 9713 tweets for rihanna. (Or ~3200, whichever is lower.)
+INFO:root:Getting 6171 tweets for StephenCurry30. (Or ~3200, whichever is lower.)
+INFO:root:Getting 35404 tweets for NICKIMINAJ. (Or ~3200, whichever is lower.)
+INFO:root:Getting 3752 tweets for taylorswift13. (Or ~3200, whichever is lower.)
+INFO:root:Getting 13960 tweets for BarackObama. (Or ~3200, whichever is lower.)
