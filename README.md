@@ -1,30 +1,18 @@
-user-timeline-tools
+Twitter Analysis
 ======================
-(v.3 - March 27, 2015)
+I test the code of user-timeline-tools from casmlab and collect the tweets from ten famous person, suck like Taylor Swift and Kobe Bryant, the famous singer and basketball player.
 
-user-timeline-tools are a set of Python scripts that get UserTimeline data from Twitter and parse it into a MySQL database so that a Django app can serve it up. If you just want to collect "raw" JSON, you can use just [getUserTimeline.py]() and skip the parsing.
+And I create another two files:</br>
+```cloudWord.py``` ```tweetAmount.py```
 
-Python Versions
+[cloudWord.py](https://github.com/randywhisper/twitterAnalysis/blob/master/cloudword.py)  will make a word cloud of the tweets, and we can find the most frequency word in the tweets are "RT" and "U". If the stopwords contain "RT", we can get a more accurate result.
+[tweetAmount.py](https://github.com/randywhisper/twitterAnalysis/blob/master/tweetAmount.py) will make a bar graph based on the data of tweets and fullname in the Database. We can find the relative frequency of tweets among the ten users.</br>
+I have push the graph of cloudword and tweetAmount on Github.
+Conclusion
 ---------------
-```user-timeline-tools``` was written for Python 2.7. It has not been tested on other versions.
+As the data that we collect getting larger, we can make a more accurate analysis and predict. We can find out who use the Twitter most and how people post a tweet with, Phone or other Social Network? I have try to combine the data to analysis when people prefer to post tweets and what kind of topic people pay more attention to on the Twitter.
 
-What You Need Before you Start
-------------------------------
-You need a list of Twitter screen_names or user_ids stored in a plain text file, one name per line. You can use screen_names OR ids but not both in the same file. 
-
-You also need [OAuth credentials from Twitter.](https://dev.twitter.com/oauth/overview) 
-
-Tell the script where to store data using [config/settings_example.cfg](config/settings_example.cfg). Remember to save that file as ```settings.cfg``` once you've entered your settings.
-
-Setup and Go
-------------
-If you just want to get the tweets into JSON files:
-
-1. Create a ```settings.cfg``` that looks like [config/settings_example.cfg](config/settings_example.cfg) but with your values
-2. Run [getUserTimeline.py](getUserTimeline.py) (will take a while, maybe even days)
-
-	Once you have the tweets, if you want to parse into a Django-ready DB:
-
-3. Create a MySQL database using [config/schema.sql](config/schema.sql)
-4. Run [parseUserTimeline.py](parseUserTimeline.py) (will take a while, maybe even a day)
-
+Recommendation
+---------------
+1. ```parseUserTimeLine.py```, there was an error in the main function when it load the data from the json file with a for-loop.
+2. I am confused that I can not map the tweets to the twitter name when I query the database. So we can not find out which tweet is posted by the user.
